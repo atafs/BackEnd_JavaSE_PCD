@@ -4,7 +4,6 @@ import java.awt.*;
 import javax.swing.*;
 
 public class Calculator extends JFrame {
-	
 	public Calculator() {
  // Create panel p1 for the buttons and set GridLayout
 		JPanel p1 =  new JPanel();
