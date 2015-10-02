@@ -1,0 +1,29 @@
+package control_3CD.Start_PCD_week01._2_1_MaquinadeCalcular;
+
+public class NewButton {
+	
+	//ATTRIBUTES
+	private double value;
+
+	//CONSTRUCTOR
+	public NewButton(double value) {
+		super();
+		this.value = value;
+	}
+
+	//GETTERS AND SETTERS
+	public double getValue() {
+		return value;
+	}
+
+	public void setValue(double value) {
+		this.value = value;
+	}
+	
+	
+	
+	
+	
+	
+
+}
