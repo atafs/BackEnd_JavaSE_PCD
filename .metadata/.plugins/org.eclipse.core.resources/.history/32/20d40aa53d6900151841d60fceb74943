@@ -89,8 +89,9 @@ public class Calculator{
 
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				System.out.println("4");
-
+				System.out.println("+");
+				displayContext += "+";
+				display.setText(displayContext);
 			}
 		});
 		
@@ -99,8 +100,9 @@ public class Calculator{
 
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				System.out.println("5");
-
+				System.out.println("+");
+				displayContext += "+";
+				display.setText(displayContext);
 			}
 		});
 		
@@ -109,8 +111,9 @@ public class Calculator{
 
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				System.out.println("6");
-
+				System.out.println("+");
+				displayContext += "+";
+				display.setText(displayContext);
 			}
 		});
 		
@@ -119,8 +122,9 @@ public class Calculator{
 
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				System.out.println("-");
-
+				System.out.println("+");
+				displayContext += "+";
+				display.setText(displayContext);
 			}
 		});
 		
@@ -130,8 +134,9 @@ public class Calculator{
 
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				System.out.println("1");
-
+				System.out.println("+");
+				displayContext += "+";
+				display.setText(displayContext);
 			}
 		});
 		
@@ -140,8 +145,9 @@ public class Calculator{
 
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				System.out.println("2");
-
+				System.out.println("+");
+				displayContext += "+";
+				display.setText(displayContext);
 			}
 		});
 		
@@ -150,8 +156,9 @@ public class Calculator{
 
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				System.out.println("3");
-
+				System.out.println("+");
+				displayContext += "+";
+				display.setText(displayContext);
 			}
 		});
 		
@@ -160,8 +167,9 @@ public class Calculator{
 
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				System.out.println("*");
-
+				System.out.println("+");
+				displayContext += "+";
+				display.setText(displayContext);
 			}
 		});
 		
@@ -171,8 +179,9 @@ public class Calculator{
 
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				System.out.println("0");
-
+				System.out.println("+");
+				displayContext += "+";
+				display.setText(displayContext);
 			}
 		});
 		
@@ -181,8 +190,9 @@ public class Calculator{
 
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				System.out.println(".");
-
+				System.out.println("+");
+				displayContext += "+";
+				display.setText(displayContext);
 			}
 		});
 		
@@ -191,8 +201,9 @@ public class Calculator{
 
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				System.out.println("^");
-
+				System.out.println("+");
+				displayContext += "+";
+				display.setText(displayContext);
 			}
 		});
 		
@@ -201,8 +212,9 @@ public class Calculator{
 
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				System.out.println("/");
-
+				System.out.println("+");
+				displayContext += "+";
+				display.setText(displayContext);
 			}
 		});
 		
@@ -230,7 +242,8 @@ public class Calculator{
 				display.setText(displayContext);
 			}
 		});
-	
+
+		
 		//DISPLAY
 		display = new JTextField("write values");
 		display.setBackground(Color.GREEN);
@@ -240,6 +253,7 @@ public class Calculator{
 		container.add(p1, BorderLayout.WEST);
 		container.add(p2, BorderLayout.EAST);
 		container.add(display, BorderLayout.CENTER);
+
 	}
 	
 	/** */
@@ -248,11 +262,13 @@ public class Calculator{
 		frame.setSize(800, 300);
 		frame.setLocationRelativeTo(null); // Center the frame
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
 	}
 	
 	/** */
 	public void execute(Frame frame) {
 		frame.setVisible(true);
+
 	}
 
 	/** Main method */
@@ -260,6 +276,7 @@ public class Calculator{
 		Calculator gui = new Calculator();
 		JFrame frame = gui.container;
 		gui.init(frame);
-		gui.execute(frame);	
+		gui.execute(frame);
+		
 	}
 }
