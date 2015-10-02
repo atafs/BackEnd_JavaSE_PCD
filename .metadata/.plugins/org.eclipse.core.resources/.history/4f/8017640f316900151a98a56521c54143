@@ -11,6 +11,8 @@ public class Calculator extends JFrame {
 		p1.setLayout( new GridLayout( 4 , 3 ));
 		
 	
+
+
  // Add buttons to the panel
  for ( int i =  1 ; i <=  9 ; i++) {
 	 p1.add( new JButton( "" + i));
