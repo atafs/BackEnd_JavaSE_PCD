@@ -63,7 +63,6 @@ public class Calculator{
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				System.out.println("8");
-				addList.add(8.0);
 
 			}
 		});
@@ -74,7 +73,6 @@ public class Calculator{
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				System.out.println("9");
-				addList.add(9.0);
 
 			}
 		});
@@ -85,6 +83,7 @@ public class Calculator{
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				System.out.println("+");
+				addList.add(e)
 
 			}
 		});
@@ -96,7 +95,6 @@ public class Calculator{
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				System.out.println("4");
-				addList.add(4.0);
 
 			}
 		});
@@ -107,7 +105,6 @@ public class Calculator{
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				System.out.println("5");
-				addList.add(5.0);
 
 			}
 		});
@@ -118,7 +115,6 @@ public class Calculator{
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				System.out.println("6");
-				addList.add(6.0);
 
 			}
 		});
@@ -140,7 +136,6 @@ public class Calculator{
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				System.out.println("1");
-				addList.add(1.0);
 
 			}
 		});
@@ -151,7 +146,6 @@ public class Calculator{
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				System.out.println("2");
-				addList.add(2.0);
 
 			}
 		});
@@ -162,7 +156,6 @@ public class Calculator{
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				System.out.println("3");
-				addList.add(3.0);
 
 			}
 		});
@@ -184,7 +177,6 @@ public class Calculator{
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				System.out.println("0");
-				addList.add(0.0);
 
 			}
 		});
@@ -229,7 +221,6 @@ public class Calculator{
 
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				addList.removeAll(addList);
 				displayContext = "0";
 				display.setText(displayContext);
 			}
@@ -240,12 +231,7 @@ public class Calculator{
 
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				double sum = 0.0;
-				for (Double number : addList) {
-					sum += number;
-				}
-				
-				displayContext = String.valueOf(sum);
+				displayContext = "0";
 				display.setText(displayContext);
 			}
 		});

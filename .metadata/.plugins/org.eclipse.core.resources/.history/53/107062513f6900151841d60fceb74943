@@ -229,7 +229,6 @@ public class Calculator{
 
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				addList.removeAll(addList);
 				displayContext = "0";
 				display.setText(displayContext);
 			}

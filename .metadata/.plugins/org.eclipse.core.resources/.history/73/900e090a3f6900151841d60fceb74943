@@ -229,7 +229,6 @@ public class Calculator{
 
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				addList.removeAll(addList);
 				displayContext = "0";
 				display.setText(displayContext);
 			}
@@ -245,7 +244,7 @@ public class Calculator{
 					sum += number;
 				}
 				
-				displayContext = String.valueOf(sum);
+				displayContext = "0";
 				display.setText(displayContext);
 			}
 		});
