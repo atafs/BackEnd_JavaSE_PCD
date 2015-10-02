@@ -14,10 +14,8 @@ public class Calculator{
 	private JTextField display;
 	private String displayContext = "";
 	
-	private boolean flagIsFirstNumber;
-	private double firstNumber;
-	private double secondNumber;
-	private char operation;
+	private double beforeValue = 0.0;
+	private double afterValue = 0.0;
 	
 	
 	private ArrayList<Double> addList = new ArrayList<Double>();
@@ -58,8 +56,7 @@ public class Calculator{
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				System.out.println("7");
-				//ONLY WORKS FOR TWO NUMBERS
-				keepNumberForTwoNumersOnly(7.0);
+				addList.add(7.0);
 
 			}
 		});
@@ -70,8 +67,9 @@ public class Calculator{
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				System.out.println("8");
-				//ONLY WORKS FOR TWO NUMBERS
-				keepNumberForTwoNumersOnly(8.0);			}
+				addList.add(8.0);
+
+			}
 		});
 		
 		p1.add(nine);	
@@ -80,8 +78,8 @@ public class Calculator{
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				System.out.println("9");
-				//ONLY WORKS FOR TWO NUMBERS
-				keepNumberForTwoNumersOnly(9.0);
+				addList.add(9.0);
+
 			}
 		});
 		
@@ -91,8 +89,6 @@ public class Calculator{
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				System.out.println("+");
-				//ONLY WORKS FOR TWO NUMBERS: OPERATION
-				keepOperationTwoNumersOnly('+');
 
 			}
 		});
@@ -104,8 +100,8 @@ public class Calculator{
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				System.out.println("4");
-				//ONLY WORKS FOR TWO NUMBERS
-				keepNumberForTwoNumersOnly(4.0);
+				addList.add(4.0);
+
 			}
 		});
 		
@@ -115,8 +111,8 @@ public class Calculator{
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				System.out.println("5");
-				//ONLY WORKS FOR TWO NUMBERS
-				keepNumberForTwoNumersOnly(5.0);
+				addList.add(5.0);
+
 			}
 		});
 		
@@ -126,8 +122,8 @@ public class Calculator{
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				System.out.println("6");
-				//ONLY WORKS FOR TWO NUMBERS
-				keepNumberForTwoNumersOnly(6.0);
+				addList.add(6.0);
+
 			}
 		});
 		
@@ -137,8 +133,6 @@ public class Calculator{
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				System.out.println("-");
-				//ONLY WORKS FOR TWO NUMBERS: OPERATION
-				keepOperationTwoNumersOnly('-');
 
 			}
 		});
@@ -150,8 +144,8 @@ public class Calculator{
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				System.out.println("1");
-				//ONLY WORKS FOR TWO NUMBERS
-				keepNumberForTwoNumersOnly(1.0);
+				addList.add(1.0);
+
 			}
 		});
 		
@@ -161,8 +155,8 @@ public class Calculator{
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				System.out.println("2");
-				//ONLY WORKS FOR TWO NUMBERS
-				keepNumberForTwoNumersOnly(2.0);
+				addList.add(2.0);
+
 			}
 		});
 		
@@ -172,9 +166,8 @@ public class Calculator{
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				System.out.println("3");
-				//ONLY WORKS FOR TWO NUMBERS
-				//ONLY WORKS FOR TWO NUMBERS
-				keepNumberForTwoNumersOnly(3.0);
+				addList.add(3.0);
+
 			}
 		});
 		
@@ -184,8 +177,6 @@ public class Calculator{
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				System.out.println("*");
-				//ONLY WORKS FOR TWO NUMBERS: OPERATION
-				keepOperationTwoNumersOnly('*');
 
 			}
 		});
@@ -197,8 +188,8 @@ public class Calculator{
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				System.out.println("0");
-				//ONLY WORKS FOR TWO NUMBERS
-				keepNumberForTwoNumersOnly(.0);
+				addList.add(0.0);
+
 			}
 		});
 		
@@ -228,8 +219,6 @@ public class Calculator{
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				System.out.println("/");
-				//ONLY WORKS FOR TWO NUMBERS: OPERATION
-				keepOperationTwoNumersOnly('/');
 
 			}
 		});
@@ -312,22 +301,6 @@ public class Calculator{
 		return value1 / value2;
 
 	}
-	
-	/** */
-	public void keepNumberForTwoNumersOnly(double number) {
-		//ONLY WORKS FOR TWO NUMBERS
-		if (flagIsFirstNumber) {
-			firstNumber = number;
-		} else {
-			secondNumber = number;
-		}
-	}
-	
-	/** */
-	public void keepOperationTwoNumersOnly(char type) {
-		operation = type;
-	}
-
 
 	/** Main method */
 	public static void main(String[] args) {

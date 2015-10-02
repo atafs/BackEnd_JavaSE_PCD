@@ -137,8 +137,6 @@ public class Calculator{
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				System.out.println("-");
-				//ONLY WORKS FOR TWO NUMBERS: OPERATION
-				keepOperationTwoNumersOnly('-');
 
 			}
 		});
@@ -184,8 +182,6 @@ public class Calculator{
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				System.out.println("*");
-				//ONLY WORKS FOR TWO NUMBERS: OPERATION
-				keepOperationTwoNumersOnly('*');
 
 			}
 		});
@@ -228,8 +224,6 @@ public class Calculator{
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				System.out.println("/");
-				//ONLY WORKS FOR TWO NUMBERS: OPERATION
-				keepOperationTwoNumersOnly('/');
 
 			}
 		});
