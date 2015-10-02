@@ -1,0 +1,36 @@
+import java.awt.*;
+import javax.swing.*;
+
+public class TestPanels extends JFrame {
+public TestPanels() {
+// Create panel p1 for the buttons and set GridLayout
+
+
+
+// Add buttons to the panel
+for ( int i =  1 ; i <=  9 ; i++) {
+12         ( new JButton( "" + i));
+13      }
+14
+15      p1.add( new JButton( "" + 0 ));
+16      p1.add( new JButton( "Start" ));
+17      p1.add( new JButton( "Stop" ));
+18
+19 // Create panel p2 to hold a text field and p1
+20
+21       ( new JTextField( "Time to be displayed here" ),
+22        BorderLayout.NORTH);
+23       (p1, BorderLayout.CENTER);
+24
+25 // Add contents to the frame
+26      add(p2, BorderLayout.EAST); 
+27      add( new JButton( "Food to be placed here" ),
+28        BorderLayout.CENTER);
+29    }
+30
+p2.add
+p2.add
+JPanel p2 =  new JPanel( new BorderLayout());
+p1.add
+p1.setLayout( new GridLayout( 4 , 3 ));
+JPanel p1 = 
