@@ -16,8 +16,8 @@ public class Calculator{
 	
 	private boolean flagIsFirstNumber = true;
 	private boolean flagIsCountMade = true;
-	private double firstNumber = 0.0;
-	private double secondNumber = 0.0;
+	private double firstNumber;
+	private double secondNumber;
 	private char operation;
 	
 	
@@ -329,26 +329,18 @@ public class Calculator{
 				switch (key) {
 				case '+':
 					sum = plusValues(firstNumber, secondNumber);
-					flagIsCountMade = true;
-					flagIsFirstNumber = true;
 					break;
 					
 				case '-':
 					sum = subtractValues(firstNumber, secondNumber);
-					flagIsCountMade = true;
-					flagIsFirstNumber = true;
 					break;
 					
 				case '*':
 					sum = multiplyValues(firstNumber, secondNumber);
-					flagIsCountMade = true;
-					flagIsFirstNumber = true;
 					break;
 					
 				case '/':
-					sum = divideValues(firstNumber, secondNumber);	
-					flagIsCountMade = true;
-					flagIsFirstNumber = true;
+					sum = divideValues(firstNumber, secondNumber);			
 					break;
 					
 				default:
@@ -358,7 +350,9 @@ public class Calculator{
 				
 				displayContext = String.valueOf(sum);
 				display.setText(displayContext);
-				
+				flagIsCountMade = true;
+				firstNumber = 0.0;
+				secondNumber = 0.0;
 			}
 		});
 	

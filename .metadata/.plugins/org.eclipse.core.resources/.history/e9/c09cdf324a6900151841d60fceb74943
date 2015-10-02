@@ -330,25 +330,21 @@ public class Calculator{
 				case '+':
 					sum = plusValues(firstNumber, secondNumber);
 					flagIsCountMade = true;
-					flagIsFirstNumber = true;
 					break;
 					
 				case '-':
 					sum = subtractValues(firstNumber, secondNumber);
 					flagIsCountMade = true;
-					flagIsFirstNumber = true;
 					break;
 					
 				case '*':
 					sum = multiplyValues(firstNumber, secondNumber);
 					flagIsCountMade = true;
-					flagIsFirstNumber = true;
 					break;
 					
 				case '/':
 					sum = divideValues(firstNumber, secondNumber);	
 					flagIsCountMade = true;
-					flagIsFirstNumber = true;
 					break;
 					
 				default:

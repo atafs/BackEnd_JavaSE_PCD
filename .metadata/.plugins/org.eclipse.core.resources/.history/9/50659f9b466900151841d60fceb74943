@@ -15,9 +15,9 @@ public class Calculator{
 	private String displayContext = "";
 	
 	private boolean flagIsFirstNumber = true;
-	private boolean flagIsCountMade = true;
-	private double firstNumber = 0.0;
-	private double secondNumber = 0.0;
+	private boolean flagIsDisplayClean = false;
+	private double firstNumber;
+	private double secondNumber;
 	private char operation;
 	
 	
@@ -58,13 +58,10 @@ public class Calculator{
 
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				//CHECK IF THERE ID THE NEED TO CLEAN DISPLAY
-				cleanDisplayToNewCount();
 				System.out.println("7");
 				displayContextInTextfield(7.0);
 				//ONLY WORKS FOR TWO NUMBERS
 				keepNumberForTwoNumersOnly(7.0);
-				
 
 			}
 		});
@@ -74,15 +71,10 @@ public class Calculator{
 
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				//CHECK IF THERE ID THE NEED TO CLEAN DISPLAY
-				cleanDisplayToNewCount();
 				System.out.println("8");
 				displayContextInTextfield(8.0);
 				//ONLY WORKS FOR TWO NUMBERS
-				keepNumberForTwoNumersOnly(8.0);
-				
-				
-			}
+				keepNumberForTwoNumersOnly(8.0);			}
 		});
 		
 		p1.add(nine);	
@@ -90,13 +82,10 @@ public class Calculator{
 
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				//CHECK IF THERE ID THE NEED TO CLEAN DISPLAY
-				cleanDisplayToNewCount();
 				System.out.println("9");
 				displayContextInTextfield(9.0);
 				//ONLY WORKS FOR TWO NUMBERS
 				keepNumberForTwoNumersOnly(9.0);
-				
 			}
 		});
 		
@@ -105,13 +94,10 @@ public class Calculator{
 
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				//CHECK IF THERE ID THE NEED TO CLEAN DISPLAY
-				cleanDisplayToNewCount();
 				System.out.println("+");
 				displayContextInTextfield('+');
 				//ONLY WORKS FOR TWO NUMBERS: OPERATION
 				keepOperationTwoNumersOnly('+');
-				
 
 			}
 		});
@@ -122,13 +108,10 @@ public class Calculator{
 
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				//CHECK IF THERE ID THE NEED TO CLEAN DISPLAY
-				cleanDisplayToNewCount();
 				System.out.println("4");
 				displayContextInTextfield(4.0);
 				//ONLY WORKS FOR TWO NUMBERS
 				keepNumberForTwoNumersOnly(4.0);
-				
 			}
 		});
 		
@@ -137,13 +120,10 @@ public class Calculator{
 
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				//CHECK IF THERE ID THE NEED TO CLEAN DISPLAY
-				cleanDisplayToNewCount();
 				System.out.println("5");
 				displayContextInTextfield(5.0);
 				//ONLY WORKS FOR TWO NUMBERS
 				keepNumberForTwoNumersOnly(5.0);
-				
 			}
 		});
 		
@@ -152,13 +132,10 @@ public class Calculator{
 
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				//CHECK IF THERE ID THE NEED TO CLEAN DISPLAY
-				cleanDisplayToNewCount();
 				System.out.println("6");
 				displayContextInTextfield(6.0);
 				//ONLY WORKS FOR TWO NUMBERS
 				keepNumberForTwoNumersOnly(6.0);
-				
 			}
 		});
 		
@@ -167,13 +144,10 @@ public class Calculator{
 
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				//CHECK IF THERE ID THE NEED TO CLEAN DISPLAY
-				cleanDisplayToNewCount();
 				System.out.println("-");
 				displayContextInTextfield('-');
 				//ONLY WORKS FOR TWO NUMBERS: OPERATION
 				keepOperationTwoNumersOnly('-');
-				
 
 			}
 		});
@@ -184,13 +158,10 @@ public class Calculator{
 
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				//CHECK IF THERE ID THE NEED TO CLEAN DISPLAY
-				cleanDisplayToNewCount();
 				System.out.println("1");
 				displayContextInTextfield(1.0);
 				//ONLY WORKS FOR TWO NUMBERS
 				keepNumberForTwoNumersOnly(1.0);
-				
 			}
 		});
 		
@@ -199,13 +170,10 @@ public class Calculator{
 
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				//CHECK IF THERE ID THE NEED TO CLEAN DISPLAY
-				cleanDisplayToNewCount();
 				System.out.println("2");
 				displayContextInTextfield(2.0);
 				//ONLY WORKS FOR TWO NUMBERS
 				keepNumberForTwoNumersOnly(2.0);
-				
 			}
 		});
 		
@@ -214,13 +182,10 @@ public class Calculator{
 
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				//CHECK IF THERE ID THE NEED TO CLEAN DISPLAY
-				cleanDisplayToNewCount();
 				System.out.println("3");
 				displayContextInTextfield(3.0);
 				//ONLY WORKS FOR TWO NUMBERS
 				keepNumberForTwoNumersOnly(3.0);
-				
 			}
 		});
 		
@@ -229,13 +194,10 @@ public class Calculator{
 
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				//CHECK IF THERE ID THE NEED TO CLEAN DISPLAY
-				cleanDisplayToNewCount();
 				System.out.println("*");
 				displayContextInTextfield('*');
 				//ONLY WORKS FOR TWO NUMBERS: OPERATION
 				keepOperationTwoNumersOnly('*');
-				
 
 			}
 		});
@@ -246,13 +208,10 @@ public class Calculator{
 
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				//CHECK IF THERE ID THE NEED TO CLEAN DISPLAY
-				cleanDisplayToNewCount();
 				System.out.println("0");
 				displayContextInTextfield(0.0);
 				//ONLY WORKS FOR TWO NUMBERS
-				keepNumberForTwoNumersOnly(0.0);
-				
+				keepNumberForTwoNumersOnly(.0);
 			}
 		});
 		
@@ -261,11 +220,8 @@ public class Calculator{
 
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				//CHECK IF THERE ID THE NEED TO CLEAN DISPLAY
-				cleanDisplayToNewCount();
 				System.out.println(".");
 				displayContextInTextfield('.');
-				
 
 			}
 		});
@@ -275,11 +231,8 @@ public class Calculator{
 
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				//CHECK IF THERE ID THE NEED TO CLEAN DISPLAY
-				cleanDisplayToNewCount();
 				System.out.println("^");
 				displayContextInTextfield('^');
-				
 
 			}
 		});
@@ -289,13 +242,10 @@ public class Calculator{
 
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				//CHECK IF THERE ID THE NEED TO CLEAN DISPLAY
-				cleanDisplayToNewCount();
 				System.out.println("/");
 				displayContextInTextfield('/');
 				//ONLY WORKS FOR TWO NUMBERS: OPERATION
 				keepOperationTwoNumersOnly('/');
-				
 
 			}
 		});
@@ -329,26 +279,18 @@ public class Calculator{
 				switch (key) {
 				case '+':
 					sum = plusValues(firstNumber, secondNumber);
-					flagIsCountMade = true;
-					flagIsFirstNumber = true;
 					break;
 					
 				case '-':
 					sum = subtractValues(firstNumber, secondNumber);
-					flagIsCountMade = true;
-					flagIsFirstNumber = true;
 					break;
 					
 				case '*':
 					sum = multiplyValues(firstNumber, secondNumber);
-					flagIsCountMade = true;
-					flagIsFirstNumber = true;
 					break;
 					
 				case '/':
-					sum = divideValues(firstNumber, secondNumber);	
-					flagIsCountMade = true;
-					flagIsFirstNumber = true;
+					sum = divideValues(firstNumber, secondNumber);			
 					break;
 					
 				default:
@@ -358,7 +300,6 @@ public class Calculator{
 				
 				displayContext = String.valueOf(sum);
 				display.setText(displayContext);
-				
 			}
 		});
 	
@@ -438,15 +379,6 @@ public class Calculator{
 	public void displayContextInTextfield(char operation) {
 		displayContext += operation;
 		display.setText(displayContext);
-	}
-	
-	/** */
-	public void cleanDisplayToNewCount() {
-		if (flagIsCountMade) {
-			displayContext = "";
-			display.setText(displayContext);
-			flagIsCountMade = false;
-		}
 	}
 
 
