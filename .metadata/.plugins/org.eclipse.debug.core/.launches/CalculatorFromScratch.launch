@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
 <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
-<listEntry value="/LinguagemJAVA_super/src/control_3CD/Start_PCD_week01/_2_1_MaquinadeCalcular/Calculator.java"/>
+<listEntry value="/LinguagemJAVA_super/src/control_3CD/Start_PCD_week01/_2_1_MaquinadeCalcular/CalculatorFromScratch.java"/>
 </listAttribute>
 <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
 <listEntry value="1"/>
 </listAttribute>
-<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="control_3CD.Start_PCD_week01._2_1_MaquinadeCalcular.Calculator"/>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="control_3CD.Start_PCD_week01._2_1_MaquinadeCalcular.CalculatorFromScratch"/>
 <stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="LinguagemJAVA_super"/>
 </launchConfiguration>
