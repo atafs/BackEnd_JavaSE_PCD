@@ -1,0 +1,57 @@
+package control_3CD.Start_PCD_week03._3_1_DetecaoDeQuadrantes;
+
+import java.io.File;
+
+import javax.swing.ImageIcon;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.SwingConstants;
+
+import control_3CD.Start_SWING_JComponent03;
+
+public class Gallery {
+	
+	//ATTRIBUTES
+	private JFrame window;
+	private ImageIcon[] images;
+
+	//CONSTRUCTOR
+	public Gallery() {
+		window = new JFrame("GALLERY");
+		window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		window.setSize(400, 300);
+		
+		//LABEL
+		JLabel image = new JLabel("", SwingConstants.CENTER);
+		
+		//ICON
+		ImageIcon icon = new ImageIcon("control_3CD\\Start_PCD_week03\\_3_1_DetecaoDeQuadrantes\\images\\timor1.jpg");
+		
+		image.setIcon(icon);
+		window.add(image);
+		
+	
+	}
+	/** */
+	public void loadImages() {
+		File file = new File("control_3CD\\Start_PCD_week03\\_3_1_DetecaoDeQuadrantes\\images");
+		File[] files = root.listFiles();
+		for (File f : files) {
+			System.out.println(f.getAbsolutePath());
+			
+		}
+	}
+	
+	/** */
+	public void open() {
+		window.setVisible(true);
+
+	}
+	
+	/** */
+	public static void main(String[] args) {
+		new Gallery().open();
+	}
+	
+
+}
