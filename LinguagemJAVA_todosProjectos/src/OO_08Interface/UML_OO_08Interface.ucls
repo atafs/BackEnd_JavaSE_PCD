@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.1.6" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
+  associations="true" dependencies="false" nesting-relationships="true">  
+  <interface id="1" language="java" name="OO_08Interface.Casamento" project="LinguagemJAVA_todosProjectos" 
+    file="/LinguagemJAVA_todosProjectos/src/OO_08Interface/Casamento.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="81" width="169" x="315" y="167"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="2" language="java" name="OO_08Interface.Pessoa" project="LinguagemJAVA_todosProjectos" 
+    file="/LinguagemJAVA_todosProjectos/src/OO_08Interface/Pessoa.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="189" width="127" x="43" y="-62"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="3" language="java" name="OO_08Interface.Start_OO_08Interface" project="LinguagemJAVA_todosProjectos" 
+    file="/LinguagemJAVA_todosProjectos/src/OO_08Interface/Start_OO_08Interface.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="99" width="149" x="628" y="-62"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="4" language="java" name="OO_08Interface.Homem" project="LinguagemJAVA_todosProjectos" 
+    file="/LinguagemJAVA_todosProjectos/src/OO_08Interface/Homem.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="169" x="210" y="-62"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <package id="5" language="java" name="OO_08Interface" project="LinguagemJAVA_todosProjectos" 
+    file="/LinguagemJAVA_todosProjectos/src/OO_08Interface" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="50" width="114" x="817" y="-62"/>    
+    <display autosize="true" stereotype="true" accessors="true"/>  
+  </package>  
+  <class id="6" language="java" name="OO_08Interface.Mulher" project="LinguagemJAVA_todosProjectos" 
+    file="/LinguagemJAVA_todosProjectos/src/OO_08Interface/Mulher.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="169" x="419" y="-62"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <realization id="7">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="1"/>  
+  </realization>  
+  <realization id="8">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="1"/>  
+  </realization>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    accessors="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true" static="true"/>    
+    <operations public="true" package="true" protected="true" private="true" static="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>

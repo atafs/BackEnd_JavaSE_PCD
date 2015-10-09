@@ -5,11 +5,16 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.File;
 
+import javax.swing.DefaultListModel;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+import javax.swing.JList;
+import javax.swing.JOptionPane;
 import javax.swing.SwingConstants;
+import javax.swing.event.ListSelectionEvent;
+import javax.swing.event.ListSelectionListener;
 
 public class Gallery {
 	
@@ -27,6 +32,18 @@ public class Gallery {
 		window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		window.setSize(600, 400);
 		
+		//LISTS
+		final DefaultListModel<String> content = new DefaultListModel<String>();
+		
+		final JList<String> list = new JList<String>();
+		list.addListSelectionListener(new ListSelectionListener() {
+			
+			@Override
+			public void valueChanged(ListSelectionEvent e) {
+				JOptionPane.showInputDialog(null, "indice="+list.getSelectedIndex());				
+			}
+		});
+		
 		//LABEL
 		final JLabel image = new JLabel("", SwingConstants.CENTER);
 		image.setIcon(images[index]);
@@ -37,21 +54,13 @@ public class Gallery {
 		window.add(image, BorderLayout.CENTER);;
 		
 		//BUTTON
-		JButton next = new JButton(">");
+		JButton next = new JButton("add");
 		next.addActionListener(new ActionListener() {
 			
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				if (index >= images.length) {
-					image.setIcon(null);
-					image.setText("no image");
-				} else {
-					index--;
-					image.setIcon(images[index]);
-				}
-				index++;
-				
-				
+				String s = JOptionPane.showInputDialog("HELLO");
+				content.addElement(s);
 			}
 		});
 		

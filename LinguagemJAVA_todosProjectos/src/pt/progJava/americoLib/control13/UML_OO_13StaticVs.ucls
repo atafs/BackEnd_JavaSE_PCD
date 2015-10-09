@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.1.6" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
+  associations="true" dependencies="false" nesting-relationships="true">  
+  <class id="1" language="java" name="pt.progJava.americoLib.control13.Pessoa" project="LinguagemJAVA_todosProjectos" 
+    file="/LinguagemJAVA_todosProjectos/src/pt/progJava/americoLib/control13/Pessoa.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="189" width="149" x="47" y="-25"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="2" language="java" name="pt.progJava.americoLib.control13.Start_OO_13StaticVsOO" 
+    project="LinguagemJAVA_todosProjectos" 
+    file="/LinguagemJAVA_todosProjectos/src/pt/progJava/americoLib/control13/Start_OO_13StaticVsOO.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="99" width="164" x="236" y="-25"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <package id="3" language="java" name="pt.progJava.americoLib.control13" project="LinguagemJAVA_todosProjectos" 
+    file="/LinguagemJAVA_todosProjectos/src/pt/progJava/americoLib/control13" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="50" width="215" x="440" y="-25"/>    
+    <display autosize="true" stereotype="true" accessors="true"/>  
+  </package>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    accessors="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true" static="true"/>    
+    <operations public="true" package="true" protected="true" private="true" static="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>

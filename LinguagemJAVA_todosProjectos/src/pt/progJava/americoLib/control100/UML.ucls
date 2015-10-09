@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.1.6" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
+  associations="true" dependencies="false" nesting-relationships="true">  
+  <class id="1" language="java" name="pt.progJava.americoLib.control99_observerPattern.Dog" project="Control99_aula7_2" 
+    file="/Control99_aula7_2/src/pt/progJava/americoLib/control99_observerPattern/Dog.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="243" width="221" x="763" y="315"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="2" language="java" name="pt.progJava.americoLib.control99_observerPattern.Child" 
+    project="Control99_aula7_2" 
+    file="/Control99_aula7_2/src/pt/progJava/americoLib/control99_observerPattern/Child.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="117" width="221" x="241" y="158"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="3" language="java" name="pt.progJava.americoLib.control99_observerPattern.StartApplication" 
+    project="Control99_aula7_2" 
+    file="/Control99_aula7_2/src/pt/progJava/americoLib/control99_observerPattern/StartApplication.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="99" width="221" x="502" y="158"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="4" language="java" name="pt.progJava.americoLib.control99_observerPattern.Person" 
+    project="Control99_aula7_2" 
+    file="/Control99_aula7_2/src/pt/progJava/americoLib/control99_observerPattern/Person.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="171" width="221" x="502" y="315"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="5" language="java" name="pt.progJava.americoLib.control99_observerPattern.DogEvent" 
+    project="Control99_aula7_2" 
+    file="/Control99_aula7_2/src/pt/progJava/americoLib/control99_observerPattern/DogEvent.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="99" width="221" x="763" y="158"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="6" language="java" name="pt.progJava.americoLib.control99_observerPattern.DogAdapter" 
+    project="Control99_aula7_2" 
+    file="/Control99_aula7_2/src/pt/progJava/americoLib/control99_observerPattern/DogAdapter.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="153" width="221" x="241" y="315"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="7" language="java" name="pt.progJava.americoLib.control99_observerPattern.DogListener" 
+    project="Control99_aula7_2" 
+    file="/Control99_aula7_2/src/pt/progJava/americoLib/control99_observerPattern/DogListener.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="135" width="221" x="502" y="598"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <association id="8">    
+    <end type="SOURCE" refId="5" navigable="false">      
+      <attribute id="9" name="source"/>      
+      <multiplicity id="10" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="1" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="11">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="7"/>  
+  </realization>  
+  <association id="12">    
+    <end type="SOURCE" refId="2" navigable="false">      
+      <attribute id="13" name="listener"/>      
+      <multiplicity id="14" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="6" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="15">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="7"/>  
+  </realization>  
+  <association id="16">    
+    <end type="SOURCE" refId="1" navigable="false">      
+      <attribute id="17" name="listeners"/>      
+      <multiplicity id="18" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="7" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    accessors="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true" static="true"/>    
+    <operations public="true" package="true" protected="true" private="true" static="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>
