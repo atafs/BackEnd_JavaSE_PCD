@@ -11,20 +11,12 @@ import javax.swing.JLabel;
 public class Pista extends JLabel{
 
 	//ATTRIBUTES
-	private int carro1 = 0;
-	private int carro2 = 0;
-	private int carro3 = 0;
-	private int carro4 = 0;
-	
+	private int carro1, carro2, carro3, carro4;
 	private int x1, x2, x3, x4;
 	private int y1, y2, y3, y4;
 
-	
 	private final int NUM_STEPS = 15;
-	private ImageIcon icon1;
-	private ImageIcon icon2;
-	private ImageIcon icon3;
-	private ImageIcon icon4;
+	private ImageIcon icon1, icon2, icon3, icon4;
 	
 	//CONSTRUCTOR
 	public Pista() {
