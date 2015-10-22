@@ -19,4 +19,6 @@
 <fullyQualifiedTypeName name="javax.swing.ImageIcon"/>
 <fullyQualifiedTypeName name="com.sun.javafx.scene.paint.GradientUtils.Point"/>
 <fullyQualifiedTypeName name="java.awt.event.MouseAdapter"/>
+<fullyQualifiedTypeName name="java.util.Stack"/>
+<fullyQualifiedTypeName name="java.util.EmptyStackException"/>
 </qualifiedTypeNameHistroy>
