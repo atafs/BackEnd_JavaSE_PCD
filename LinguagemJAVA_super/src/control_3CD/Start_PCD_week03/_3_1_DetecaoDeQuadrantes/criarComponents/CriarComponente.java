@@ -8,7 +8,6 @@ import javax.swing.ImageIcon;
 import javax.swing.JComponent;
 import javax.swing.JFrame;
 
-import com.sun.javafx.scene.paint.GradientUtils.Point;
 
 @SuppressWarnings("serial")
 public class CriarComponente extends JComponent {
